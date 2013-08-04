@@ -11,5 +11,5 @@ class Book < ActiveRecord::Base
   has_many :likes
   has_many :liking_users, :through => :likes, :source => :user 
 
-  has_attached_file :cover # styles: { medium: "450x300"}
+  has_attached_file :cover, styles: { medium: "450x300"}
 end
