@@ -26,7 +26,7 @@ class BooksController < ApplicationController
   # GET /books/new
   # GET /books/new.json
   def new
-    @book = current_user.books.new
+    @book = Book.new
 
     respond_to do |format|
       format.html # new.html.erb
