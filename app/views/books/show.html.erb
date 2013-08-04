@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="span6">
+    <div class="cover">
+      <img src="#" alt="I am a book cover" height="450" width="300" border="1">
+    </div>
+  </div>
+  <div class="span6">
+    <div class="book-info">
+      <div class="well">
+      <p>
+        <b>Title:</b>
+        <%= @book.title %>
+      </p>
+      <p>
+        <b>Author:</b>
+        <%= @book.author %>
+      </p>
+      <p>
+        <b>Description:</b>
+        <%= @book.description %>
+      </p>
+    </div>
+      <table class="table">
+        <td>
+          <p>
+            <b><%= link_to "Buy", @book.link %></b>
+          </p>
+        </td>
+        <td>
+          <p>
+            <b>Smiley:</b>
+            <%= @book.score %>
+          </p>
+        </td>
+        <td>
+          <p>Add</p>
+        </td>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
