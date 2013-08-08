@@ -6,6 +6,7 @@ class Book < ActiveRecord::Base
   
 
   belongs_to :user
+  blah blah blah
 
   # the like associations
   has_many :likes
